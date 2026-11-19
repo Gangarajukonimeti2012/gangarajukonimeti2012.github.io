@@ -52,6 +52,18 @@ document.getElementById('filters').addEventListener('click', e => {
   });
 });
 
+// 3D tilt on the avatar card
+(function () {
+  const card = document.getElementById('avatarCard');
+  if (!card || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  card.addEventListener('pointermove', e => {
+    const r = card.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+    card.style.transform = `rotateY(${x * 14}deg) rotateX(${-y * 14}deg) scale(1.02)`;
+  });
+  card.addEventListener('pointerleave', () => { card.style.transform = ''; });
+})();
+
 // Animated data-network background
 (function () {
   const canvas = document.getElementById('network');
