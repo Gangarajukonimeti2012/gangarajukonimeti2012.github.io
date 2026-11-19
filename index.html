@@ -3,12 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gangaraju Konimeti | Analytics Engineer & Data Analyst</title>
-  <meta name="description" content="Gangaraju Konimeti — Analytics Engineer & Data Analyst. Power BI, Databricks, PySpark, Microsoft Fabric, SQL. Microsoft PL-300 certified." />
-  <meta property="og:title" content="Gangaraju Konimeti | Analytics Engineer & Data Analyst" />
-  <meta property="og:description" content="Power BI · Databricks · PySpark · Microsoft Fabric · SQL" />
+  <title>Gangaraju Konimeti | Power BI Developer & Data Analyst</title>
+  <meta name="description" content="Gangaraju Konimeti, Power BI Developer & Data Analyst based in Dubai. Power BI, DAX, Databricks, PySpark, Microsoft Fabric and SQL. Microsoft PL-300 certified." />
+  <meta name="theme-color" content="#070b14" />
+  <link rel="canonical" href="https://gangarajukonimeti2012.github.io/" />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b1120'/><text x='50' y='66' font-size='48' text-anchor='middle' fill='%2322d3ee' font-family='monospace' font-weight='700'>GK</text></svg>" />
+  <meta property="og:url" content="https://gangarajukonimeti2012.github.io/" />
+  <meta property="og:title" content="Gangaraju Konimeti | Power BI Developer & Data Analyst" />
+  <meta property="og:description" content="Power BI · DAX · Databricks · Microsoft Fabric · SQL. PL-300 certified, based in Dubai." />
+  <meta property="og:image" content="https://gangarajukonimeti2012.github.io/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://gangarajukonimeti2012.github.io/assets/og-image.png" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23070b14'/><text x='50' y='66' font-size='48' text-anchor='middle' fill='%2322d3ee' font-family='monospace' font-weight='700'>GK</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -18,6 +26,8 @@
   </script>
 </head>
 <body>
+  <canvas id="network" aria-hidden="true"></canvas>
+
   <header class="nav" id="nav">
     <div class="container nav-inner">
       <a href="#top" class="logo"><span class="accent">&lt;</span>GK<span class="accent">/&gt;</span></a>
@@ -46,13 +56,14 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container">
+        <p class="status mono"><span class="pulse"></span> Dubai, UAE · Open to Power BI Developer &amp; Data Analyst roles</p>
         <p class="mono accent hero-kicker">&gt; Hi, I'm</p>
         <h1 class="hero-name">Gangaraju Konimeti</h1>
-        <h2 class="hero-title">Analytics Engineer <span class="muted">&amp;</span> Data Analyst</h2>
+        <h2 class="hero-title">Power BI Developer <span class="amp">&amp;</span> Data Analyst</h2>
         <p class="hero-sub">
-          I turn raw data into trusted, self-serve insight. I build Medallion pipelines on
-          <strong>Databricks</strong> &amp; <strong>Microsoft Fabric</strong> and design
-          <strong>Power BI</strong> semantic models people actually use.
+          I turn raw data into trusted, self-serve insight. I design <strong>Power BI</strong> semantic models
+          with DAX and Row-Level Security, and build the pipelines that feed them on
+          <strong>Databricks</strong> &amp; <strong>Microsoft Fabric</strong>.
         </p>
         <div class="hero-typed mono">
           <span class="muted">$</span> <span id="typed"></span><span class="cursor">_</span>
@@ -78,14 +89,14 @@
         <div class="about-grid">
           <div class="about-text reveal">
             <p>
-              I'm a Power BI developer and analytics engineer with <strong>3+ years in technology delivery</strong>.
+              I'm a Power BI developer and data analyst with <strong>3+ years in technology delivery</strong>.
               At <strong>Cognizant</strong>, working with BT Group UK, I validated data flows across enterprise systems, ran release
               management across Agile sprints and built Power BI dashboards that tracked SLA, defect and release KPIs.
             </p>
             <p>
-              Today I focus on the full analytics stack. I build <strong>Medallion Architecture</strong> pipelines with Databricks, PySpark and
-              Delta Lake, then Fabric Lakehouses with <strong>Direct Lake</strong> semantic models. On top of those I design Star Schema models with
-              DAX, Row-Level Security and scheduled refresh.
+              Today I work across the full analytics stack. I design <strong>Star Schema</strong> models in Power BI with DAX,
+              Row-Level Security and scheduled refresh. I also build the <strong>Medallion Architecture</strong> pipelines that feed them,
+              using Databricks, PySpark, Delta Lake, Unity Catalog and Fabric Direct Lake.
             </p>
             <p>
               I care about <strong>data quality</strong>. I validate from source to report, so the numbers on the dashboard match the numbers in the lake.
@@ -95,7 +106,7 @@
           <div class="stats reveal">
             <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years in tech delivery</span></div>
             <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Agile sprints delivered</span></div>
-            <div class="stat"><span class="stat-num">85</span><span class="stat-label">Test scripts migrated to JMeter</span></div>
+            <div class="stat"><span class="stat-num">9</span><span class="stat-label">Portfolio projects</span></div>
             <div class="stat"><span class="stat-num">PL-300</span><span class="stat-label">Microsoft certified</span></div>
           </div>
         </div>
@@ -113,23 +124,23 @@
           </div>
           <div class="skill-card reveal">
             <h4>Data Engineering</h4>
-            <div class="tags"><span>Databricks</span><span>PySpark</span><span>Delta Lake</span><span>Microsoft Fabric</span><span>Direct Lake</span><span>Medallion Architecture</span><span>Data Warehousing</span></div>
+            <div class="tags"><span>Databricks</span><span>PySpark</span><span>Delta Lake</span><span>Unity Catalog</span><span>Microsoft Fabric</span><span>Direct Lake</span><span>Medallion Architecture</span></div>
           </div>
           <div class="skill-card reveal">
             <h4>Languages &amp; Data</h4>
-            <div class="tags"><span>SQL</span><span>Python</span><span>Pandas</span><span>DuckDB</span><span>REST APIs</span><span>Data Quality &amp; Reconciliation</span></div>
+            <div class="tags"><span>SQL</span><span>Python</span><span>Pandas</span><span>PostgreSQL</span><span>DuckDB</span><span>REST APIs</span><span>Data Quality &amp; Reconciliation</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h4>Business Analysis</h4>
+            <div class="tags"><span>BRD / FRD</span><span>User Stories</span><span>Acceptance Criteria</span><span>RTM</span><span>UAT</span><span>Requirements Elicitation</span><span>Jira</span></div>
           </div>
           <div class="skill-card reveal">
             <h4>AI &amp; Automation</h4>
             <div class="tags"><span>n8n</span><span>AI Agents</span><span>Ollama (Local LLM)</span><span>LLaMA 3.1 / Groq</span><span>Power Automate</span><span>NLP</span></div>
           </div>
           <div class="skill-card reveal">
-            <h4>Delivery</h4>
-            <div class="tags"><span>Requirements Elicitation</span><span>UAT</span><span>Production Support</span><span>JIRA</span><span>Agile Scrum</span><span>JMeter</span><span>Documentation</span></div>
-          </div>
-          <div class="skill-card reveal">
-            <h4>Cloud &amp; Tools</h4>
-            <div class="tags"><span>Azure</span><span>Databricks CLI</span><span>Streamlit</span><span>Git &amp; GitHub</span><span>Data Governance</span></div>
+            <h4>Delivery &amp; Tools</h4>
+            <div class="tags"><span>Agile Scrum</span><span>Production Support</span><span>JMeter</span><span>Azure</span><span>Streamlit</span><span>Git &amp; GitHub</span><span>Data Governance</span></div>
           </div>
         </div>
       </div>
@@ -173,23 +184,60 @@
     <section id="projects" class="section">
       <div class="container">
         <h3 class="section-title"><span class="mono accent">04.</span> Projects</h3>
+
+        <!-- FEATURED -->
+        <article class="featured reveal">
+          <div class="featured-visual">
+            <div class="flow flow-lg mono" aria-label="Pipeline: CSV files to Bronze, Silver, Gold, then dashboard">
+              <span class="node">5 CSVs</span><i></i>
+              <span class="node bronze">Bronze</span><i></i>
+              <span class="node silver">Silver</span><i></i>
+              <span class="node gold">Gold</span><i></i>
+              <span class="node dash">Dashboard</span>
+            </div>
+            <div class="star mono" aria-label="Star schema: fact_orders with dim_customer, dim_product and dim_date">
+              <span class="dim">dim_customer</span>
+              <span class="fact">fact_orders<small>112,650 rows</small></span>
+              <span class="dim">dim_product</span>
+              <span class="dim">dim_date</span>
+            </div>
+          </div>
+          <div class="featured-body">
+            <p class="mono accent small-label">Featured project · 2026</p>
+            <h4>Olist E-commerce Sales Lakehouse</h4>
+            <dl class="psr">
+              <dt>Problem</dt>
+              <dd>An online store kept orders, customers, products and payments in separate files. Nobody could easily answer "how much did we sell each month?" or "which categories sell best?"</dd>
+              <dt>What I built</dt>
+              <dd>Raw CSVs flow through bronze, silver and gold layers on <strong>Databricks</strong>, all governed by <strong>Unity Catalog</strong>. Gold is a star schema with primary and foreign keys, and lineage is tracked automatically.</dd>
+              <dt>Result</dt>
+              <dd>A 112,650-row fact table and an AI/BI dashboard with 6 charts that answer the sales, category and delivery questions directly.</dd>
+            </dl>
+            <div class="tags small"><span>Databricks</span><span>Unity Catalog</span><span>PySpark</span><span>SQL</span><span>Delta Lake</span><span>AI/BI Dashboard</span></div>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/Gangarajukonimeti2012/databricks-olist-sales" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+        </article>
+
         <div class="filters mono" id="filters">
           <button class="active" data-filter="all">all</button>
+          <button data-filter="bi">power-bi</button>
           <button data-filter="de">data-engineering</button>
-          <button data-filter="bi">bi</button>
+          <button data-filter="ba">business-analysis</button>
           <button data-filter="ai">ai</button>
         </div>
         <div class="projects-grid" id="projectsGrid">
 
           <article class="project reveal" data-cat="de bi">
+            <div class="thumb"><div class="flow mono"><span class="node">Databricks</span><i></i><span class="node gold">Gold</span><i></i><span class="node">Fabric</span><i></i><span class="node dash">Power BI</span></div></div>
             <div class="project-top"><span class="mono muted">2026</span>
               <a href="https://github.com/Gangarajukonimeti2012/retail-data-engineering-databricks-fabric" target="_blank" rel="noopener" aria-label="GitHub repo">↗</a></div>
             <h4>Retail Data Engineering: Databricks → Fabric → Power BI</h4>
-            <p>An end-to-end Medallion pipeline (Bronze/Silver/Gold) on Databricks with PySpark and Delta Lake. Invalid records go to quarantine, and the fact table is tuned with partition pruning, broadcast joins and Z-ORDER. Gold tables feed a Fabric Direct Lake model, and totals were cross-validated to match exactly.</p>
+            <p>A Medallion pipeline on Databricks with PySpark and Delta Lake. Invalid records go to quarantine, and the fact table is tuned with Z-ORDER and broadcast joins. Gold tables feed a Fabric Direct Lake model, and totals were cross-validated to match exactly.</p>
             <div class="tags small"><span>Databricks</span><span>PySpark</span><span>Delta Lake</span><span>Fabric</span><span>Power BI</span></div>
           </article>
 
           <article class="project reveal" data-cat="bi">
+            <div class="thumb"><div class="flow mono"><span class="node">Weather API</span><i></i><span class="node">Power Query</span><i></i><span class="node dash">Power BI</span><i></i><span class="node">Auto-refresh 4×</span></div></div>
             <div class="project-top"><span class="mono muted">2025</span>
               <a href="https://github.com/Gangarajukonimeti2012/Weather-Dashboard-Automation" target="_blank" rel="noopener" aria-label="GitHub repo">↗</a></div>
             <h4>Real-Time Weather Analytics Dashboard</h4>
@@ -197,7 +245,24 @@
             <div class="tags small"><span>Power BI</span><span>Power Automate</span><span>DAX</span><span>REST API</span><span>Azure</span></div>
           </article>
 
+          <article class="project reveal" data-cat="bi">
+            <div class="thumb"><div class="bars" aria-hidden="true"><span style="--h:45%"></span><span style="--h:70%"></span><span style="--h:55%"></span><span style="--h:90%"></span><span style="--h:65%"></span><span style="--h:80%"></span></div></div>
+            <div class="project-top"><span class="mono muted">2026</span></div>
+            <h4>Sales Analytics Dashboard</h4>
+            <p>An interactive sales dashboard covering revenue trends, regional performance, category mix and a sales-rep leaderboard. It's built on 1,000 transactions across 4 regions and 5 channels, and gives business users self-serve answers instead of ad-hoc requests.</p>
+            <div class="tags small"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>SQL</span></div>
+          </article>
+
+          <article class="project reveal" data-cat="ba">
+            <div class="thumb"><div class="flow mono"><span class="node">BRD</span><i></i><span class="node">FRD</span><i></i><span class="node">Jira stories</span><i></i><span class="node">UAT</span><i></i><span class="node dash">App</span></div></div>
+            <div class="project-top"><span class="mono muted">2026 · In progress</span><span class="mono muted private">private repo</span></div>
+            <h4>Billing System: Business Analysis Case Study</h4>
+            <p>An end-to-end BA project for a real family trading business, replacing hand-made rent bills and Bills of Supply with one hosted app. I wrote the BRD and FRD, user stories with Given/When/Then criteria, epics and sprints in Jira, an RTM and UAT. The app is built on Streamlit and PostgreSQL, with role-based access for 3 users.</p>
+            <div class="tags small"><span>BRD / FRD</span><span>Jira</span><span>User Stories</span><span>UAT</span><span>Streamlit</span><span>PostgreSQL</span></div>
+          </article>
+
           <article class="project reveal" data-cat="ai">
+            <div class="thumb"><div class="flow mono"><span class="node">Live data</span><i></i><span class="node">KPIs</span><i></i><span class="node">Local LLM</span><i></i><span class="node">Guardrail</span><i></i><span class="node dash">Email</span></div></div>
             <div class="project-top"><span class="mono muted">2026</span>
               <a href="https://github.com/Gangarajukonimeti2012/ai-data-analyst-agent" target="_blank" rel="noopener" aria-label="GitHub repo">↗</a></div>
             <h4>AI Data Analyst Agent</h4>
@@ -206,6 +271,7 @@
           </article>
 
           <article class="project reveal" data-cat="ai">
+            <div class="thumb"><div class="flow mono"><span class="node">Question</span><i></i><span class="node">LLaMA 3.1</span><i></i><span class="node">SQL</span><i></i><span class="node">DuckDB</span><i></i><span class="node dash">Answer</span></div></div>
             <div class="project-top"><span class="mono muted">2026</span>
               <a href="https://github.com/Gangarajukonimeti2012/sql-ai-copilot" target="_blank" rel="noopener" aria-label="GitHub repo">↗</a></div>
             <h4>AI SQL Copilot</h4>
@@ -213,22 +279,17 @@
             <div class="tags small"><span>Python</span><span>Streamlit</span><span>LLaMA 3.1</span><span>DuckDB</span><span>Pandas</span></div>
           </article>
 
-          <article class="project reveal" data-cat="bi">
-            <div class="project-top"><span class="mono muted">2026</span></div>
-            <h4>Sales Analytics Dashboard</h4>
-            <p>An interactive sales dashboard covering revenue trends, regional performance, category mix and a sales-rep leaderboard. It's built on 1,000 transactions across 4 regions and 5 channels, and gives business users self-serve answers instead of ad-hoc requests.</p>
-            <div class="tags small"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>SQL</span></div>
-          </article>
-
           <article class="project reveal" data-cat="de bi">
+            <div class="thumb thumb-img"><img src="assets/img/erp-crm-architecture.jpeg" alt="Architecture diagram: CRM and ERP CSV files flow through bronze, silver and gold layers in PostgreSQL to BI and reporting" loading="lazy" width="900" height="573" /></div>
             <div class="project-top"><span class="mono muted">DWH</span>
               <a href="https://github.com/Gangarajukonimeti2012/ERP-CRM-Datawarehousing-project-using-medallkion-architecture---Analytics-in-Tableau" target="_blank" rel="noopener" aria-label="GitHub repo">↗</a></div>
             <h4>ERP + CRM Data Warehouse</h4>
-            <p>A SQL data warehouse that brings ERP and CRM sources together using Medallion Architecture. It has cleansed, conformed dimensional models and Tableau analytics on top.</p>
-            <div class="tags small"><span>SQL</span><span>Data Warehousing</span><span>Medallion</span><span>Tableau</span></div>
+            <p>A PostgreSQL data warehouse that brings ERP and CRM CSV sources together using Medallion Architecture. Stored procedures load and cleanse each layer, and a gold star schema feeds Tableau analytics.</p>
+            <div class="tags small"><span>PostgreSQL</span><span>SQL</span><span>Medallion</span><span>Star Schema</span><span>Tableau</span></div>
           </article>
 
           <article class="project reveal" data-cat="ai">
+            <div class="thumb"><div class="flow mono"><span class="node">Audio</span><i></i><span class="node">Speech-to-Text</span><i></i><span class="node">NLP</span><i></i><span class="node dash">Score</span></div></div>
             <div class="project-top"><span class="mono muted">NLP</span>
               <a href="https://github.com/Gangarajukonimeti2012/nlp-hirevue-interview-analysis" target="_blank" rel="noopener" aria-label="GitHub repo">↗</a></div>
             <h4>NLP Interview Analysis</h4>
@@ -259,14 +320,22 @@
       <div class="container">
         <h3 class="section-title center"><span class="mono accent">06.</span> Get In Touch</h3>
         <p class="contact-text">
-          I'm open to <strong>Power BI Developer</strong>, <strong>Analytics Engineer</strong> and <strong>Data Analyst</strong> roles.
-          My inbox is always open.
+          I'm open to <strong>Power BI Developer</strong> and <strong>Data Analyst</strong> roles in Dubai and the UAE.
+          The quickest way to reach me is email or WhatsApp.
         </p>
-        <a href="mailto:gangarajukonimeti2@gmail.com" class="btn btn-primary btn-lg">Say Hello</a>
+        <div class="contact-cta">
+          <a href="mailto:gangarajukonimeti2@gmail.com" class="btn btn-primary btn-lg">Email Me</a>
+          <a href="https://wa.me/971505079622" class="btn btn-ghost btn-lg" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-item" href="tel:+971505079622"><span class="mono muted">UAE</span><span>+971 50 507 9622</span></a>
+          <a class="contact-item" href="tel:+918939268714"><span class="mono muted">India</span><span>+91 89392 68714</span></a>
+          <a class="contact-item" href="mailto:gangarajukonimeti2@gmail.com"><span class="mono muted">Email</span><span>gangarajukonimeti2@gmail.com</span></a>
+        </div>
         <div class="socials">
-          <a href="mailto:gangarajukonimeti2@gmail.com">Email</a>
           <a href="https://linkedin.com/in/gangaraju-konimeti" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://github.com/Gangarajukonimeti2012" target="_blank" rel="noopener">GitHub</a>
+          <a href="assets/Gangaraju_Konimeti_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
         </div>
         <p class="muted small-text">Languages: English · Telugu · Tamil</p>
       </div>
