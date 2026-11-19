@@ -337,13 +337,17 @@ main, .footer { position: relative; }
 .contact { text-align: center; }
 .contact-text { max-width: 520px; margin: 0 auto 32px; color: var(--muted); font-size: 1.05rem; }
 .contact-cta { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
-.contact-grid { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 12px; max-width: 820px; margin: 32px auto 0; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 12px; max-width: 640px; margin: 32px auto 0; }
 .contact-item {
   display: flex; flex-direction: column; gap: 2px; padding: 14px 16px; text-align: left;
   background: var(--card); border: 1px solid var(--border); border-radius: 12px; transition: border-color .2s;
   overflow-wrap: anywhere;
 }
 .contact-item:hover { border-color: var(--accent); }
+button.contact-item { font: inherit; color: inherit; cursor: pointer; width: 100%; }
+.contact-item.copied { border-color: #22c55e; }
+.mail-alt { margin-top: 14px; }
+.mail-alt a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 .contact-item span:last-child { font-size: .93rem; }
 @media (max-width: 700px) { .contact-grid { grid-template-columns: 1fr; } }
 .contact-item .mono { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; }

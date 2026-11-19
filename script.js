@@ -126,4 +126,24 @@ document.getElementById('filters').addEventListener('click', e => {
   new MutationObserver(() => { readColor(); if (reduce) draw(); }).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
 })();
 
+// Copy email to clipboard
+(function () {
+  const btn = document.getElementById('copyEmail');
+  if (!btn) return;
+  const label = document.getElementById('copyLabel');
+  btn.addEventListener('click', async () => {
+    const email = btn.dataset.email;
+    let ok = false;
+    try { await navigator.clipboard.writeText(email); ok = true; } catch (e) {
+      const t = document.createElement('textarea');
+      t.value = email; document.body.appendChild(t); t.select();
+      try { ok = document.execCommand('copy'); } catch (e2) {}
+      t.remove();
+    }
+    label.textContent = ok ? 'Copied!' : 'select & copy';
+    btn.classList.toggle('copied', ok);
+    setTimeout(() => { label.textContent = 'click to copy'; btn.classList.remove('copied'); }, 2000);
+  });
+})();
+
 document.getElementById('year').textContent = new Date().getFullYear();
